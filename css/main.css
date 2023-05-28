@@ -154,7 +154,7 @@ p img {
 }
 p.lead {
 	font-family: "lora-regular", serif;
-	font-size: 2rem;
+	font-size: 1rem;
 	line-height: 1.8;
 	color: #888888;
 }
@@ -1138,7 +1138,7 @@ header .logo a {
 	float: left;
 	width: 40px;
 	height: 40px;
-	margin-left: 20px;
+	margin-left: 20px auto;
 	margin-top: 13px;
 	display: block;
 	position: relative;
@@ -1274,24 +1274,27 @@ header .logo a {
  */
 @media only screen and (max-width:1024px) {
 	header .top-bar {
-		left: 60px;
+		left: 0px;
+		visibility: hidden;
 	}
 }
 @media only screen and (max-width:768px) {
 	header .top-bar {
-		left: 50px;
+		left: 0px;
 	}
 }
 @media only screen and (max-width:600px) {
 	header .top-bar {
-		left: 35px;
+		left: 0px;
 	}
 }
 @media only screen and (max-width:400px) {
 	header .top-bar {
-		left: 25px;
+		left: 0px;
 	}
+
 }
+
 
 
 /** 
@@ -1498,8 +1501,9 @@ header .logo a {
  */
 #about {
 	background: #FFFFFF;
-	padding-top: 12rem;
-	padding-bottom: 15rem;
+	padding-top: 5rem;
+	padding-bottom: 2rem;
+	
 }
 #about .section-intro {
 	margin-bottom: 3rem;
@@ -2573,6 +2577,15 @@ footer .copyright span:last-child::after {
 	}
 	footer .copyright span::after {
 		display: none;
+	}
+
+	#go-top {
+		position: fixed;
+		visibility: hidden;
+	}
+
+	.col-twelve {
+		font-size: 5px;
 	}
 }
 
